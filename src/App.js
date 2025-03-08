@@ -111,7 +111,7 @@ const PDFQuerySystem = () => {
         setSessionActive(false);
         setResponseMessage("");
         setQuery("");
-        setUploadedFile(null);
+        // setUploadedFile(null);
       }
     } catch (error) {
       alert("Error ending session");
