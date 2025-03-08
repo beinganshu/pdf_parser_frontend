@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 const PDFQuerySystem = () => {
-  const [uploadedFile, setUploadedFile] = useState(null);
+  // const [uploadedFile, setUploadedFile] = useState(null);
   const [uploadMessage, setUploadMessage] = useState("");
   const [query, setQuery] = useState("");
   const [responseMessage, setResponseMessage] = useState("");
@@ -46,7 +46,7 @@ const PDFQuerySystem = () => {
       // Check if the response is successful and upload message is available
       if (data["upload-message"]) {
         setUploadMessage(data["upload-message"]);
-        setUploadedFile(file.name);
+        // setUploadedFile(file.name);
         setSessionActive(true); // Switch to the query page on successful upload
         console.log("Session active: ", true); // Log session active status
       } else if (data.error) {
